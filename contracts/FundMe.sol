@@ -35,13 +35,13 @@ contract FundMe {
         s_priceFeed = AggregatorV3Interface(priceFeedAddress);
     }
 
-    // receive() external payable {
-    //     fund();
-    // }
+    receive() external payable {
+        fund();
+    }
     
-    // fallback() external payable {
-    //     fund();
-    // }
+    fallback() external payable {
+        fund();
+    }
 
     function fund() public payable {
         require(msg.value.getConversionRate(s_priceFeed) >= MINIMUM_USD, "You need to spend more ETH!");
