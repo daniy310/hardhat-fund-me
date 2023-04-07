@@ -13,6 +13,6 @@
 
 # The project also includes :
 - deploy scripts that :
- - automatically check the network and set a proper AggregatorV3Interface for the price feed
- - verify the contract on EtherScan if it's deployed on a testnet
+    - automatically check the network and set a proper AggregatorV3Interface for the price feed
+    - verify the contract on EtherScan if it's deployed on a testnet
 - unit testing and also stage testing
